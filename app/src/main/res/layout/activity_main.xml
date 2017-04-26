@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bright.mysqldemo.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/userName"
+        android:hint="User Name"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:gravity="center_vertical|center" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/login" />
+
+    <Button
+        android:text="new user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:id="@+id/newUser" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:id="@+id/progressBar" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_alignStart="@+id/login"
+        android:layout_marginTop="18dp"
+        android:id="@+id/status" />
+</RelativeLayout>
